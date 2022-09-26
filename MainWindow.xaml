@@ -8,8 +8,8 @@
         Title="Калькулятор" Height="400" Width="350">
     <Grid Background="#FFECECEC">
         <Button x:Name="bt01" Content="0" HorizontalAlignment="Left" Margin="16,296,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt01_Click"/>
-        <Button x:Name="bt02" Content="." HorizontalAlignment="Left" Margin="97,296,0,0" VerticalAlignment="Top" Width="65" Height="38"/>
-        <Button x:Name="bt03" Content="=" HorizontalAlignment="Left" Margin="179,296,0,0" VerticalAlignment="Top" Width="144" Height="38"/>
+        <Button x:Name="bt02" Content="." HorizontalAlignment="Left" Margin="97,296,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt02_Click"/>
+        <Button x:Name="bt03" Content="=" HorizontalAlignment="Left" Margin="179,296,0,0" VerticalAlignment="Top" Width="144" Height="38" Click="bt03_Click"/>
         <Button x:Name="bt1" Content="1" HorizontalAlignment="Left" Margin="16,243,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt1_Click"/>
         <Button x:Name="bt2" Content="2" HorizontalAlignment="Left" Margin="97,243,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt2_Click"/>
         <Button x:Name="bt3" Content="3" HorizontalAlignment="Left" Margin="179,243,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt3_Click"/>
@@ -19,15 +19,15 @@
         <Button x:Name="bt7" Content="7" HorizontalAlignment="Left" Margin="16,138,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt7_Click"/>
         <Button x:Name="bt8" Content="8" HorizontalAlignment="Left" Margin="97,138,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt8_Click"/>
         <Button x:Name="bt9" Content="9" HorizontalAlignment="Left" Margin="179,138,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt9_Click"/>
-        <Button x:Name="bt04" Content="/" HorizontalAlignment="Left" Margin="258,243,0,0" VerticalAlignment="Top" Width="65" Height="38"/>
-        <Button x:Name="bt05" Content="*" HorizontalAlignment="Left" Margin="258,190,0,0" VerticalAlignment="Top" Width="65" Height="38"/>
-        <Button x:Name="bt06" Content="-" HorizontalAlignment="Left" Margin="258,138,0,0" VerticalAlignment="Top" Width="65" Height="38"/>
-        <Button x:Name="bt07" Content="+" HorizontalAlignment="Left" Margin="258,86,0,0" VerticalAlignment="Top" Width="65" Height="38"/>
-        <Button x:Name="bt08" Content="+/-" HorizontalAlignment="Left" Margin="179,86,0,0" VerticalAlignment="Top" Width="65" Height="38"/>
-        <Button x:Name="bt09" HorizontalAlignment="Left" Margin="97,86,0,0" VerticalAlignment="Top" Width="65" Height="38" Content="&lt;--"/>
-        <Button x:Name="bt010" HorizontalAlignment="Left" Margin="16,86,0,0" VerticalAlignment="Top" Width="65" Height="38" Content="С"/>
-        <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="39" Margin="16,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="307"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="16,43,0,0" VerticalAlignment="Top" Height="28"/>
+        <Button x:Name="bt04" Content="/" HorizontalAlignment="Left" Margin="258,243,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt04_Click"/>
+        <Button x:Name="bt05" Content="*" HorizontalAlignment="Left" Margin="258,190,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt05_Click"/>
+        <Button x:Name="bt06" Content="-" HorizontalAlignment="Left" Margin="258,138,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt06_Click"/>
+        <Button x:Name="bt07" Content="+" HorizontalAlignment="Left" Margin="258,86,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt07_Click"/>
+        <Button x:Name="bt08" Content="+/-" HorizontalAlignment="Left" Margin="179,86,0,0" VerticalAlignment="Top" Width="65" Height="38" Click="bt08_Click"/>
+        <Button x:Name="bt09" HorizontalAlignment="Left" Margin="97,86,0,0" VerticalAlignment="Top" Width="65" Height="38" Content="&lt;--" Click="bt09_Click"/>
+        <Button x:Name="bt010" HorizontalAlignment="Left" Margin="16,86,0,0" VerticalAlignment="Top" Width="65" Height="38" Content="С" Click="bt010_Click"/>
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="39" Margin="16,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="307" TextAlignment="Right"/>
+        <Label x:Name="lb" Content="Label" HorizontalAlignment="Left" Margin="16,43,0,0" VerticalAlignment="Top" Height="28"/>
 
     </Grid>
 </Window>

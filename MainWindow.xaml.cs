@@ -25,6 +25,10 @@ namespace ISRPO_Palashicheva_PR2
             InitializeComponent();
         }
 
+        float a, b;
+        int count;
+        bool znak = true;
+
         private void bt01_Click(object sender, RoutedEventArgs e)
         {
             tb1.Text = tb1.Text + 0;
@@ -83,6 +87,114 @@ namespace ISRPO_Palashicheva_PR2
             tb1.Text = tb1.Text + 9;
         }
 
+        private void bt02_Click(object sender, RoutedEventArgs e)
+        {
+            tb1.Text = tb1.Text + ",";
+        }
 
+        private void bt07_Click(object sender, RoutedEventArgs e)
+        {
+            a = float.Parse(tb1.Text);
+            tb1.Clear();
+            count = 1;
+            lb.Content = a.ToString() + "+";
+            znak = true;
+        }
+
+        private void bt06_Click(object sender, RoutedEventArgs e)
+        {
+            a = float.Parse(tb1.Text);
+            tb1.Clear();
+            count = 2;
+            lb.Content = a.ToString() + "-";
+            znak = true;
+        }
+
+        private void bt05_Click(object sender, RoutedEventArgs e)
+        {
+            a = float.Parse(tb1.Text);
+            tb1.Clear();
+            count = 3;
+            lb.Content = a.ToString() + "*";
+            znak = true;
+        }
+
+        private void bt04_Click(object sender, RoutedEventArgs e)
+        {
+            a = float.Parse(tb1.Text);
+            tb1.Clear();
+            count = 4;
+            lb.Content = a.ToString() + "/";
+            znak = true;
+        }
+
+        private void bt03_Click(object sender, RoutedEventArgs e)
+        {
+            calculate();
+            lb.Content = "";
+        }
+
+        private void calculate()
+        {
+            switch (count)
+            {
+
+                case 1:
+                    b = a + float.Parse(tb1.Text);
+                    tb1.Text = b.ToString();
+                    break;
+                case 2:
+                    b = a - float.Parse(tb1.Text);
+                    tb1.Text = b.ToString();
+                    break;
+                case 3:
+                    b = a * float.Parse(tb1.Text);
+                    tb1.Text = b.ToString();
+                    break;
+                case 4:
+                    b = a / float.Parse(tb1.Text);
+                    tb1.Text = b.ToString();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void bt010_Click(object sender, RoutedEventArgs e)
+        {
+            tb1.Text = "";
+            lb.Content = "";
+        }
+
+
+        private void bt09_Click(object sender, RoutedEventArgs e)
+        {
+            int lenght = tb1.Text.Length - 1;
+            string text = tb1.Text;
+            tb1.Clear();
+            for (int i = 0; i < lenght; i++)
+            {
+                tb1.Text = tb1.Text + text[i];
+            }
+
+        }
+        private void bt08_Click(object sender, RoutedEventArgs e)
+        {
+            if (znak == true)
+            {
+                tb1.Text = "-" + tb1.Text;
+                znak = false;
+            }
+            else if (znak == false)
+            {
+                tb1.Text = tb1.Text.Replace("-", "");
+                znak = true;
+
+            }
+
+
+
+
+        }
     }
 }
