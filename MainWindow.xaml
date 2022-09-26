@@ -27,7 +27,7 @@
         <Button x:Name="bt09" HorizontalAlignment="Left" Margin="97,86,0,0" VerticalAlignment="Top" Width="65" Height="38" Content="&lt;--" Click="bt09_Click"/>
         <Button x:Name="bt010" HorizontalAlignment="Left" Margin="16,86,0,0" VerticalAlignment="Top" Width="65" Height="38" Content="С" Click="bt010_Click"/>
         <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="39" Margin="16,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="307" TextAlignment="Right"/>
-        <Label x:Name="lb" Content="Label" HorizontalAlignment="Left" Margin="16,43,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label x:Name="lb" Content="" HorizontalAlignment="Left" Margin="16,43,0,0" VerticalAlignment="Top" Height="28"/>
 
     </Grid>
 </Window>
